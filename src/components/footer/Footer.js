@@ -1,14 +1,26 @@
-import "./Footer.css";
+import Nav from "react-bootstrap/Nav";
+
 function Footer() {
   return (
-    <div id="Footer">
+    <section id="Footer">
       <div id="Socials">
-        <a>facebook</a> <br></br>
-        <a>linkedIn</a> <br></br>
-        <a>Github</a>
+        <Nav className="justify-content-center">
+          <Nav.Item>
+            <Nav.Link eventKey="">facebook</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="">linkedin</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="">github</Nav.Link>
+          </Nav.Item>
+        </Nav>
       </div>
-      <div id="Author">Mohannad Qa</div>
-    </div>
+      <div style={{ textAlign: "center" }}>
+        <h3>Mohannad Qa</h3>
+      </div>
+      <br></br>
+    </section>
   );
 }
 export default Footer;
